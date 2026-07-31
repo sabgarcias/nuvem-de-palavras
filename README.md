@@ -16,9 +16,9 @@ Este repositório contém os scripts em Python desenvolvidos para automatizar a 
 
 ## 📂 Estrutura do Repositório
 
-* `nuvem_seguranca.py` - Script de extração e tratamento para as respostas de segurança digital.
+* `nuvem2.py` - Script de extração e tratamento para as respostas de segurança digital (Conscientização).
 * `nuvem_seguranca.png` - Imagem gerada da primeira nuvem (Foco: Conscientização).
-* `nuvem_tecnica.py` - Script de extração para as respostas do treinamento avançado.
+* `nuvem.py` - Script de extração para as respostas do treinamento avançado (Módulo Técnico).
 * `nuvem_tecnica.png` - Imagem gerada da segunda nuvem (Foco: Redes/Fortinet).
 * `README.md` - Documentação e análise dos resultados do projeto.
 
@@ -26,12 +26,12 @@ Este repositório contém os scripts em Python desenvolvidos para automatizar a 
 
 ## 📊 Análise de Sentimentos e Resultados
 
-### 1. Módulo de Conscientização (Segurança Geral)
+### 1. Módulo de Conscientização (Segurança Geral - `nuvem2.py`)
 * **Sentimento Predominante:** Altamente Positivo (~85%).
 * **Destaques:** Os alunos demonstraram forte engajamento no aprendizado prático e memorizaram conceitos críticos como **Phishing**, **Engenharia Social**, **Trava ZAP** e **SandBox**, que ganharam grande peso visual na nuvem.
 * **Oportunidades de Melhoria:** Feedbacks sugerem a padronização na didática de alguns docentes e a inclusão de ainda mais simulações de golpes reais.
 
-### 2. Módulo Técnico (Redes & Fortinet)
+### 2. Módulo Técnico (Treinamento Avançado - `nuvem.py`)
 * **Sentimento Predominante:** Neutro-Desafiador (~60% Crítico/Neutro).
 * **Destaques:** O corpo docente recebeu ótimas avaliações pela prontidão em sanar dúvidas de alto nível. Os conceitos da arquitetura **Fortinet**, **FortiGate**, **IPS** e **SD-WAN** foram o centro das atenções.
 * **Oportunidades de Melhoria:** Os alunos relataram uma curva de aprendizado íngreme (com termos como "difícil" e "confusão" ganhando destaque) e solicitaram a expansão de laboratórios práticos com Máquinas Virtuais para fixar os modos de **VLAN** de forma interativa.
@@ -51,13 +51,13 @@ Certifique-se de ter o [Git](https://git-scm.com) e o [uv](https://github.com) i
 2. **Execute as Nuvens usando o `uv`:**
    O `uv` gerenciará as dependências (`wordcloud` e `matplotlib`) de forma isolada automaticamente:
    
-   * Para rodar a primeira nuvem (Segurança):
+   * Para rodar a primeira nuvem (Segurança Geral):
      ```powershell
-     uv run --with wordcloud --with matplotlib nuvem_seguranca.py
+     uv run --with wordcloud --with matplotlib nuvem2.py
      ```
-   * Para rodar a segunda nuvem (Técnica):
+   * Para rodar a segunda nuvem (Treinamento Avançado):
      ```powershell
-     uv run --with wordcloud --with matplotlib nuvem_tecnica.py
+     uv run --with wordcloud --with matplotlib nuvem.py
      ```
 
 ---
